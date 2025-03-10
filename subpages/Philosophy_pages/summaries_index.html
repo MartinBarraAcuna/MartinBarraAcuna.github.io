@@ -10,23 +10,31 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="game_theory_index.html">Game Theory</a></li>
-            <li><a href="summaries_index.html">Summaries</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="pages-interest.html">Pages of interest</a></li>
-            <li><a href="LaTeX_phi.html">LaTeX for philosophers</a></li>
-        </ul>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game_theory_index.html">Game Theory</a></li>
+                <li><a href="summaries_index.html">Summaries</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="pages-interest.html">Pages of interest</a></li>
+                <li><a href="LaTeX_phi.html">LaTeX for philosophers</a></li>
+            </ul>
+        </div>
     </nav>
     <header>
-        <h1>Summaries</h1>
+        <h1><a href="../../index.html" style="color:white">Summaries</a></h1>
         <p>Martin Barra-Acuña</p>
     </header>
 
     <section id="summaries">
         <h2>Summaries</h2>
-        <p>On this page you can find some summaries I have done in the undergraduate courses I have taken. For the moment you will only find summaries in Spanish
+        <p>On this page you can find some summaries I have done in the undergraduate courses I have taken. For the moment you will only find summaries in Spanish. <br>
+            Another idea that I have for this page is upload some summaries and notes of classical papers in analytical tradition, among other stuffs. 
         </p>
     </section>
 
@@ -36,5 +44,10 @@
             <i class="fab fa-github"></i>
         </a>
     </footer>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

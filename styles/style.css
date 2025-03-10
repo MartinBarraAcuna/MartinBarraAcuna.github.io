@@ -1,3 +1,9 @@
+:root {
+    --altura_header: 80px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -156,7 +162,11 @@ footer {
 
 nav {
     background: rgba(12, 81, 73, 0.9);
-    position: sticky;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -164,6 +174,28 @@ nav {
     padding: 1rem 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     animation: fadeInDown 0.5s ease-out;
+    display: flex;
+}
+
+.hamburger-menu {
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger-menu .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #e0f7e3;
+    transition: 0.3s;
+}
+
+.nav-links {
+    display: flex;
 }
 
 nav ul {
@@ -173,6 +205,8 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    white-space: nowrap; /* Evita que los elementos se envuelvan */
 }
 
 nav ul li {
@@ -196,37 +230,65 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 1.5rem;
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    
+
+    .hamburger-menu {
+        display: flex; /* Mostrar en pantallas móviles */
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
     nav ul {
         flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
     }
-    
+
     nav ul li {
-        margin-bottom: 10px;
-    }
-    
-    section {
-        padding: 1.5rem;
-    }
-    
-    footer {
-        font-size: 0.9rem;
+        margin: 5px 0;
+        text-align: center;
     }
 }
+
 
 @media (max-width: 480px) {
     body {
         font-size: 14px;
     }
-    
+
     header h1 {
         font-size: 1.2rem;
+        padding: 10px;
     }
-    
+
     nav ul li a {
         font-size: 0.9rem;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul {
+        width: 100%;
+    }
+    nav ul li{
+        margin: 5px 0;
+    }
+    section {
+        padding: 1rem 5%;
+        margin: 1rem auto;
+    }
+    header{
+        padding: 1rem 0;
     }
 }

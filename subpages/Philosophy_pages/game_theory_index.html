@@ -16,22 +16,29 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="game_theory_index.html">Game Theory</a></li>
-            <li><a href="summaries_index.html">Summaries</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="#leadership">Pages of interest</a></li>
-            <li><a href="../Philosophy_pages/LaTeX_phi.html">LaTeX for philosophers</a></li>
-        </ul>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game_theory_index.html">Game Theory</a></li>
+                <li><a href="summaries_index.html">Summaries</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="pages-interest.html">Pages of interest</a></li>
+                <li><a href="LaTeX_phi.html">LaTeX for philosophers</a></li>
+            </ul>
+        </div>
     </nav>
     <header>
-        <h1>Game Theory</h1>
+        <h1><a href="../../index.html" style="color:white">Game Theory</a></h1>
         <p>Martin Barra-Acuña</p>
     </header>
 <section>
-<h1>Purpose of this section</h1>
-<p>This section will be dedicated exclusively to provide game theory material focused on philosophy. Coming soon</p>
+    <h1>Purpose of this Section</h1>
+    <p>This section is dedicated to exploring game theory through a philosophical lens. I am currently developing interactive, agent-based models to enhance this content. Stay tuned for updates.</p>
 </section>
     <footer>
         <p>© 2025 Martín Barra-Acuña</p>
@@ -39,5 +46,10 @@
             <i class="fab fa-github"></i>
         </a>
     </footer>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

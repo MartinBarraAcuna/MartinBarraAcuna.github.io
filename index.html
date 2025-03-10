@@ -10,17 +10,24 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="subpages/Philosophy_pages/game_theory_index.html">Game Theory</a></li>
-            <li><a href="subpages/Philosophy_pages/summaries_index.html">Summaries</a></li>
-            <li><a href="subpages/Philosophy_pages/works.html">Works</a></li>
-            <li><a href="subpages/Philosophy_pages/pages-interest.html">Pages of interest</a></li>
-            <li><a href="subpages/Philosophy_pages/LaTeX_phi.html">LaTeX for philosophers</a></li>
-        </ul>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="subpages/Philosophy_pages/game_theory_index.html">Game Theory</a></li>
+                <li><a href="subpages/Philosophy_pages/summaries_index.html">Summaries</a></li>
+                <li><a href="subpages/Philosophy_pages/works.html">Works</a></li>
+                <li><a href="subpages/Philosophy_pages/pages-interest.html">Pages of interest</a></li>
+                <li><a href="subpages/Philosophy_pages/LaTeX_phi.html">LaTeX for philosophers</a></li>
+            </ul>
+        </div>
     </nav>
     <header>
-        <h1>Martín Barra-Acuña</h1>
+        <h1><a href="index.html" style="color:white">Martín Barra-Acuña</a></h1>
         <p>Philosophy & Economics</p>
     </header>
 
@@ -35,6 +42,7 @@
         <div style="text-align: center;">
             <img src="assests/my_utility_function.png" alt="My utility function" style="max-width: 30%; height: auto;">
         </div>
+        <p>If you are interested in writing something together, <a href="#contact">contact me.</a></p>
     </section>
     <section>
         <h2>Works</h2>
@@ -156,7 +164,7 @@
             </li>
         </ul>
     </section>
-    <section id="contacto">
+    <section id="contact">
         <h2>Contact</h2>
         <ul>
             <li>Email: <b>martin.barra@uc.cl </b></li>
@@ -170,5 +178,10 @@
             <i class="fab fa-github"></i>
         </a>
     </footer>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
