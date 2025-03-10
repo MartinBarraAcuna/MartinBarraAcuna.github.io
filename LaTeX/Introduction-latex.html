@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/style3.css">
+    <link rel="icon" href="../../assests/logo_mba.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>LaTex 4 Phil</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../../subpages/GameTheory_pages/game_theory_index.html">1. What is LaTeX?</a></li>
+            <li><a href="#works">2. Basics</a></li>
+            <li><a href="#leadership">3. Packages</a></li>
+            <li><a href="#leadership">4. Tools</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>LaTeX for Philosophy</h1>
+        <p><center> <a href="../index.html" style="color: white;">Martin Barra-Acuña</a> </center></p>
+    </header>
+    <div class="main-content">
+
+    <section id="why-use-latex">
+        <h2>Purpose of this page</h2>
+        <p>
+            The goal of this page is to make LaTeX more accessible for philosophy. In technical branches of philosophy—especially in philosophy of science, logic, metaphysics, and formal epistemology—the use of formal tools is essential. However, anyone who has attempted to write mathematical documents in word processors like Microsoft Word knows how tedious and cumbersome the process can be. <br>
+            
+            This is particularly true for logicians, who often struggle to format lengthy proofs properly. Word imposes significant limitations when handling specialized notation. For example, Fitch-style natural deduction is not natively supported, forcing users to insert images instead. This approach compromises both the document's aesthetics and readability, and in the worst cases, can cause formatting issues when multiple images are loaded. <br>
+            
+            Another common challenge in Word is cross-referencing. The software does not automatically number equations, meaning users must reference them manually. If an equation number changes, every related reference in the text must be updated by hand, making the process inefficient and error-prone. <br>
+
+            But none of these things happen in LaTeX. LaTeX addresses these issues by providing a <b>dedicated typesetting system for mathematical notation</b>, automatically numbering equations and managing <b>cross-references</b>. It allows for the creation of complex logical proofs, including Fitch-style deductions, through specialized packages, eliminating the need for cumbersome image insertions. This ensures <b>consistent formatting</b>, readability, and efficient document management, making it ideal for the precision required in philosophical works.
+        </p>
+    </section>
+
+    <section id="explanation-sections">
+        <h2>Explanation of sections</h2>
+        This page is far from covering everything you need to learn LaTeX. However, I have made an effort to organize it in such a way that it is easy to understand and allows you to acquire the basic knowledge of this language. The following explains the sections of the navigation bar
+        <ul>
+            <li>What is LaTeX</li>
+
+            <p>It is explained what is LaTeX, some reasons for use it, some advantages and some disadvantages</p>
+
+            <li>Basics</li>
+            <p>Here is explained how configure a LaTeX document</p>
+
+            <li>Packages</li>
+            <p>Packages are the heart of a LaTeX document. In these section i present and explain main packages in LaTeX and some useful for philosophy</p>
+            
+            <li>Tools</li>
+            <p>Since I Can not cover all features of LaTeX, I redirect the reader to material that will allow them to continue learning, in addition to presenting some tools that will make the job easier.</p>
+        </ul>
+    </section>
+</body>
+I suggest understand this page as a tour. Then it is best to start in order with each of these sections (1 -> 2 -> 3 -> 4) <br> <br>
+<code>
+\documentclass[12pt, a4paper]{article} %font size 12, a4paper
+\usepackage{graphicx} % Required for inserting images <br>
+
+\title{ejemplo}  % Document Title <br> 
+\author{MARTIN BARRA} % Author name. Pueden escribirse más de uno. En caso de querer hacer salto de linea utilizar \\ <br> 
+\date{March 2025} % La fecha viene por defecto como \today (se actualice dependiendo del día). Para que no haya fecha: \date{}<br> 
+\begin{document} % Here begin our document<br>  
+
+\maketitle %This geneate our document information<br> 
+\section{Section Name} <br>
+Carnap is one of the greatest philosophers of all times<br>
+\subsection{Subsection name}<br>
+Quine wrote two Dogmas of Empiricism<br>
+\subsubsection{Subsubsection name}<br>
+G.E.M Anscombe was a catholic philosopher<br>
+\section*{Non enumarate section}<br>
+If you do not want enumerate sections, write * after 'section'. Same applies to subsection and subsubsection<br>
+\end{document}
+</code>
+</div>
+<footer>
+    <p> <center>©2025 Martín Barra-Acuña </center></p> 
+    <a href="https://github.com/MartinBarraAcuna" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+    </a>
+</footer>
+</html>

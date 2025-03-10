@@ -1,0 +1,143 @@
+/* Estilos Generales */
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Fuente legible */
+    background-color: whitesmoke; /* Fondo claro */
+    color: #333333; /* Texto principal en gris oscuro */
+    line-height: 1.5; /* Interlineado para mejor lectura */
+    margin: 0; /* Sin márgenes por defecto */
+    padding: 0; /* Sin relleno por defecto */
+    background: url('../assests/background-pattern2.png') no-repeat center center/cover;
+
+}
+
+.main-content {
+    margin-left: 8cm; /* Ajusta el valor según necesites */
+    margin-right: 8cm; /* Ajusta el valor según necesites */
+    margin-bottom: 2cm;
+    margin-top: 2cm;
+
+}
+
+code {
+    font-family: 'Courier New', monospace; /* Fuente monoespaciada para mejor legibilidad */
+    font-weight: 400; /* Peso de fuente normal para mayor claridad */
+    background-color: #282c34; /* Fondo oscuro, similar a editores de código */
+    color:whitesmoke; /* Color de texto claro para contraste */
+    display: inline-block;
+    border-radius: 8px;
+    padding: 10px 15px; /* Espacio interno para mayor comodidad */
+    line-height: 1.6; /* Espaciado entre líneas para mejor lectura */
+    font-size: 14px; /* Tamaño de fuente adecuado */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil para profundidad */
+    overflow-x: auto; /* Barra de desplazamiento horizontal si el código es largo */
+    white-space: pre-wrap; /* Permite saltos de línea y conserva espacios */
+    opacity: 50%;
+}
+
+p {
+    text-align: justify;
+}
+em {
+    color: #0b6e66;
+}
+
+b {
+    color: #0b6e66;
+}
+
+li{
+    font-weight: bold;
+}
+
+header {
+    background: rgba(29, 82, 76, 0.9);
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 3rem; /* Tamaño de fuente más grande para el título */
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    color: #1a564f; /* Encabezados en verde oscuro */
+    font-weight: bold; /* Negrita para destacar */
+    margin-bottom: 0.5em; /* Espacio debajo de los encabezados */
+}
+
+/* Enlaces */
+a {
+    color: #13a272;
+    text-decoration: none;
+    font-weight: bold; /* Añade esta línea */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* Contenedores */
+.container {
+    width: 80%; /* Ancho del contenido */
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 20px; /* Relleno interno */
+}
+
+/* Navegación */
+nav {
+    background-color: rgba(12, 81, 73, 0.9);
+    color: #ffffff; /* Texto de navegación en blanco */
+    padding: 10px 0; /* Relleno interno */
+}
+
+nav ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin relleno */
+    margin: 0; /* Sin márgenes */
+    text-align: center; /* Centrar elementos */
+}
+
+nav li {
+    display: inline; /* Elementos en línea */
+    margin: 0 20px; /* Espacio entre elementos */
+}
+
+nav a {
+    color: white; /* Enlaces de navegación en verde lima */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* Botones */
+.button {
+    background-color: #09c184; /* Fondo del botón en verde esmeralda */
+    color: #ffffff; /* Texto del botón en blanco */
+    padding: 10px 20px; /* Relleno interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar el ratón */
+}
+
+.button:hover {
+    background-color: #0a8967; /* Cambio de color al pasar el ratón */
+}
+
+/* Pie de página */
+footer {
+    background-color: rgba(12, 81, 73, 0.9);; /* Pie de página en negro profundo */
+    color: #ffffff; /* Texto del pie de página en blanco */
+    text-align: center; /* Centrar texto */
+    padding: 20px 0; /* Relleno interno */
+}
